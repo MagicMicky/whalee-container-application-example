@@ -18,7 +18,7 @@ mongo.connect(url, function(err, db) {
 });
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.send('Hello World (Git Version) !');
 });
 
 var server = app.listen(80, function () {
