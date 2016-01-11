@@ -2,7 +2,7 @@ var mongo = require('mongodb').MongoClient;
 var express = require('express');
 var app = express();
 
-var host = process.env.MONGODB_HOST;
+/*var host = process.env.MONGODB_HOST;
 var port = process.env.MONGODB_PORT;
 
 var url = 'mongodb://'+host+':'+port+'/';
@@ -15,7 +15,7 @@ mongo.connect(url, function(err, db) {
     console.log("Connected correctly to server");
   }
   //db.close();
-});
+});*/
 
 app.get('/', function (req, res) {
   res.send('Hello World (Git Version) !');
